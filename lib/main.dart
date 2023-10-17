@@ -1,0 +1,29 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      home: Scaffold(
+        body: Center(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(Icons.abc),
+              // ElevatedButton.icon(
+              //   onPressed: () {},
+              //   icon: const Icon(Icons.add),
+              //   label: const Text('foo'),
+              // ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
